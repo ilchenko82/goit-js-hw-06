@@ -6,7 +6,7 @@ const btnIncr = document.querySelector('[data-action="increment"]');
 const valueSpan = document.getElementById('value');
 
 btnDecr.addEventListener('click', () => {
-  counterValue += step;
+  counterValue -= step;
   valueSpan.textContent = counterValue;
 
   console.log(counterValue);
@@ -14,7 +14,7 @@ btnDecr.addEventListener('click', () => {
 });
 
 btnIncr.addEventListener('click', () => {
-  counterValue -= step;
+  counterValue += step;
   valueSpan.textContent = counterValue;
 
   console.log(counterValue);
